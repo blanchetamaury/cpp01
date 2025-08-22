@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amaury <amaury@student.42.fr>              +#+  +:+       +#+        */
+/*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 21:28:28 by amaury            #+#    #+#             */
-/*   Updated: 2025/08/10 21:55:27 by amaury           ###   ########.fr       */
+/*   Updated: 2025/08/22 15:14:00 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,4 @@ int main(void)
     test1->announce();
     delete test;
     delete test1;
-
 }

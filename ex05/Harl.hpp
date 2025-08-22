@@ -6,10 +6,11 @@
 /*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/20 10:18:12 by amblanch          #+#    #+#             */
-/*   Updated: 2025/08/21 10:12:05 by amblanch         ###   ########.fr       */
+/*   Updated: 2025/08/22 15:17:00 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
 #include <iostream>
 #include <string>
 

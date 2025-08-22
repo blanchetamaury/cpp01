@@ -6,10 +6,11 @@
 /*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 15:41:17 by amaury            #+#    #+#             */
-/*   Updated: 2025/08/20 20:16:24 by amblanch         ###   ########.fr       */
+/*   Updated: 2025/08/22 15:16:08 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
 #include <iostream>
 
 class Zombie {
@@ -19,7 +20,6 @@ class Zombie {
         ~Zombie(void);
         void announce(void);
         void setName(std::string name);
-
     private:
         std::string _name;
 };

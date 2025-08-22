@@ -6,10 +6,11 @@
 /*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 11:38:00 by amblanch          #+#    #+#             */
-/*   Updated: 2025/08/19 16:31:42 by amblanch         ###   ########.fr       */
+/*   Updated: 2025/08/22 15:16:36 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
 #include "Weapon.hpp"
 
 class HumanB {

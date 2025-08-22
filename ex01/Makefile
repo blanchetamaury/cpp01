@@ -1,6 +1,6 @@
-CPP = c++
+CXX = c++
 
-FLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp Zombie.cpp zombieHorde.cpp
 
@@ -11,8 +11,8 @@ NAME = ex01
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CPP) -c $(SRC) $(FLAGS)
-	$(CPP) -o $(NAME) $^ $(FLAGS)
+	$(CXX) -c $(SRC) $(CXXFLAGS)
+	$(CXX) -o $(NAME) $^ $(CXXFLAGS)
 
 clean:
 	rm -f $(OBJ)

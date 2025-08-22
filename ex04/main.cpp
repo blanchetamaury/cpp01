@@ -6,7 +6,7 @@
 /*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/19 16:38:17 by amblanch          #+#    #+#             */
-/*   Updated: 2025/08/20 10:14:58 by amblanch         ###   ########.fr       */
+/*   Updated: 2025/08/22 15:06:50 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,9 @@ int main(int argc, char **argv) {
         buff += tmp;
     }
     file.close();
-    std::ofstream output(argv[1]);
+    std::string name = std::string(argv[1]) + std::string(".replace");
+    std::ofstream output;
+    output.open(name.c_str(), std::fstream::out | std::fstream::app);
     if (output.bad()) {
         std::cerr << "error, open file" << std::endl;
         return (1);
