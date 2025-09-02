@@ -6,7 +6,7 @@
 /*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/20 10:18:32 by amblanch          #+#    #+#             */
-/*   Updated: 2025/08/21 10:59:12 by amblanch         ###   ########.fr       */
+/*   Updated: 2025/09/02 09:56:59 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,9 @@ void Harl::error(void) {
 }
 
 Harl::Harl() {
-    std::cout << "constructor" << std::endl;
 }
 
 Harl::~Harl() {
-    std::cout << "destructor" << std::endl;
 }
 
 

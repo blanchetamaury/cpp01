@@ -3,18 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amaury <amaury@student.42.fr>              +#+  +:+       +#+        */
+/*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 15:45:09 by amaury            #+#    #+#             */
-/*   Updated: 2025/08/10 21:41:13 by amaury           ###   ########.fr       */
+/*   Updated: 2025/09/01 09:40:26 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
-
-void    Zombie::setName(std::string name) {
-    _name = name;
-}
 
 Zombie* newZombie(std::string name) {
     Zombie  *tmp;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amaury <amaury@student.42.fr>              +#+  +:+       +#+        */
+/*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 15:55:08 by amaury            #+#    #+#             */
-/*   Updated: 2025/08/10 21:35:52 by amaury           ###   ########.fr       */
+/*   Updated: 2025/09/02 09:26:26 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,11 @@ Zombie::Zombie(void) {
 };
 
 Zombie::~Zombie(void) {
-    std::cout << "destructor" << std::endl;
+    std::cout << this->_name << "destructor" << std::endl;
+}
+
+void   Zombie::setName(std::string name) {
+    _name = name;
 }
 
 void Zombie::announce(void) {

@@ -6,7 +6,7 @@
 /*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/20 10:18:32 by amblanch          #+#    #+#             */
-/*   Updated: 2025/08/21 10:41:59 by amblanch         ###   ########.fr       */
+/*   Updated: 2025/09/02 09:50:52 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,15 +40,13 @@ Harl::~Harl() {
 void Harl::complain(std::string level) {
     std::string arr[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
     void (Harl::*fct[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
-    int i = 0;
+    
 
-    while (i < 4) {
+    for (int i = 0; i < 4; i++) {
         if (arr[i] == level) {
             (this->*fct[i])();
-            break ;
+            return ;
         }
-        i++;
     }
-    if (i == 4)
-        std::cout << "ERROR, [" << level << "] word not found!" << std::endl;
+    std::cout << "ERROR, [" << level << "] word not found!" << std::endl;
 }

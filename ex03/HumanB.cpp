@@ -6,7 +6,7 @@
 /*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/19 09:28:35 by amblanch          #+#    #+#             */
-/*   Updated: 2025/08/19 16:31:56 by amblanch         ###   ########.fr       */
+/*   Updated: 2025/09/02 09:28:48 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 #include "HumanB.hpp"
 
 void    HumanB::attack(void) {
-    std::cout << name << " attacks with their " << weapon->getType() << std::endl;
+    if (weapon)
+        std::cout << name << " attacks with their " << weapon->getType() << std::endl;
+    else
+        std::cout << name << " attacks with their hands" << std::endl;
 }
 
 HumanB::HumanB(std::string new_name) {

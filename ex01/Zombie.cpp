@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/12 09:42:48 by amblanch          #+#    #+#             */
-/*   Updated: 2025/08/12 09:46:23 by amblanch         ###   ########.fr       */
+/*   Created: 2025/08/10 15:55:08 by amaury            #+#    #+#             */
+/*   Updated: 2025/09/02 09:27:40 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,11 @@ Zombie::Zombie(void) {
 };
 
 Zombie::~Zombie(void) {
-    std::cout << "destructor" << std::endl;
+    std::cout << this->_name << "destructor" << std::endl;
+}
+
+void   Zombie::setName(std::string name) {
+    _name = name;
 }
 
 void Zombie::announce(void) {

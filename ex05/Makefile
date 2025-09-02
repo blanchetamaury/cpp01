@@ -6,7 +6,7 @@ SRC = main.cpp Harl.cpp
 
 OBJ = $(SRC:%.cpp=%.o)
 
-NAME = ex05
+NAME = harl
 
 all: $(NAME)
 
