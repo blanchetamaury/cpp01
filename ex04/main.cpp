@@ -6,7 +6,7 @@
 /*   By: amblanch <amblanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/19 16:38:17 by amblanch          #+#    #+#             */
-/*   Updated: 2025/09/02 09:48:40 by amblanch         ###   ########.fr       */
+/*   Updated: 2025/09/03 15:38:08 by amblanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ int main(int argc, char **argv) {
     file.close();
     std::string name = std::string(argv[1]) + std::string(".replace");
     std::ofstream output(name.c_str());
-    if (output.bad()) {
+    if (output.bad() || !output) {
         std::cerr << "error, open file" << std::endl;
         return (1);
     }
